@@ -1,0 +1,21 @@
+# copy the repo docs folder from repo to wiki repo
+
+name: Copy Docs to Wiki
+
+on: push:
+    branches:
+      - main  # Change this if your main branch is named differently
+    paths:
+      - 'docs/**'
+    workflow_dispatch:
+jobs:
+  copy-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+    
+
+
